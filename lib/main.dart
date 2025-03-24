@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_app/utils/theme/theme.dart';
 
 void main() {
   runApp(const MyApp());
@@ -7,14 +8,14 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Campus Crave',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-      ),
+      debugShowCheckedModeBanner: false,
+      themeMode: ThemeMode.system,
+      theme: FAAppTheme.lightTheme,
+      darkTheme: FAAppTheme.darkTheme,
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
