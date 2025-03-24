@@ -17,10 +17,10 @@ class FATextTheme {
 
     bodyLarge: const TextStyle().copyWith(fontSize: 14.0, fontWeight: FontWeight.w500, color: FAColors.dark),
     bodyMedium: const TextStyle().copyWith(fontSize: 14.0, fontWeight: FontWeight.normal, color: FAColors.dark),
-    bodySmall: const TextStyle().copyWith(fontSize: 14.0, fontWeight: FontWeight.w500, color: FAColors.dark.withOpacity(0.5)),
+    bodySmall: const TextStyle().copyWith(fontSize: 14.0, fontWeight: FontWeight.w500, color: FAColors.dark.withValues(alpha: 0.5)),
 
     labelLarge: const TextStyle().copyWith(fontSize: 12.0, fontWeight: FontWeight.normal, color: FAColors.dark),
-    labelMedium: const TextStyle().copyWith(fontSize: 12.0, fontWeight: FontWeight.normal, color: FAColors.dark.withOpacity(0.5)),
+    labelMedium: const TextStyle().copyWith(fontSize: 12.0, fontWeight: FontWeight.normal, color: FAColors.dark.withValues(alpha: 0.5)),
   );
 
   /// Customizable Dark Text Theme
@@ -35,9 +35,9 @@ class FATextTheme {
 
     bodyLarge: const TextStyle().copyWith(fontSize: 14.0, fontWeight: FontWeight.w500, color: FAColors.light),
     bodyMedium: const TextStyle().copyWith(fontSize: 14.0, fontWeight: FontWeight.normal, color: FAColors.light),
-    bodySmall: const TextStyle().copyWith(fontSize: 14.0, fontWeight: FontWeight.w500, color: FAColors.light.withOpacity(0.5)),
+    bodySmall: const TextStyle().copyWith(fontSize: 14.0, fontWeight: FontWeight.w500, color: FAColors.light.withValues(alpha: 0.5)),
 
     labelLarge: const TextStyle().copyWith(fontSize: 12.0, fontWeight: FontWeight.normal, color: FAColors.light),
-    labelMedium: const TextStyle().copyWith(fontSize: 12.0, fontWeight: FontWeight.normal, color: FAColors.light.withOpacity(0.5)),
+    labelMedium: const TextStyle().copyWith(fontSize: 12.0, fontWeight: FontWeight.normal, color: FAColors.light.withValues(alpha: 0.5)),
   );
 }

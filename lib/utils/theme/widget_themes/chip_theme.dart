@@ -5,7 +5,7 @@ class FAChipTheme {
   FAChipTheme._();
 
   static ChipThemeData lightChipTheme = ChipThemeData(
-    disabledColor: FAColors.grey.withOpacity(0.4),
+    disabledColor: FAColors.grey.withValues(alpha: 0.4),
     labelStyle: const TextStyle(color: FAColors.black),
     selectedColor: FAColors.primary,
     padding: const EdgeInsets.symmetric(horizontal: 12.0, vertical: 12),

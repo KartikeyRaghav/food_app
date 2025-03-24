@@ -19,7 +19,7 @@ class TLoaders {
           margin: const EdgeInsets.symmetric(horizontal: 30),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(30),
-            color: FAHelperFunctions.isDarkMode(Get.context!) ? FAColors.darkerGrey.withOpacity(0.9) : FAColors.grey.withOpacity(0.9),
+            color: FAHelperFunctions.isDarkMode(Get.context!) ? FAColors.darkerGrey.withValues(alpha: 0.9) : FAColors.grey.withValues(alpha: 0.9),
           ),
           child: Center(child: Text(message, style: Theme.of(Get.context!).textTheme.labelLarge)),
         ),
