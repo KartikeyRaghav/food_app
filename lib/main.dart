@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_app/features/authentication/screens/onboarding/onboarding.dart';
 import 'package:food_app/utils/theme/theme.dart';
 
 void main() {
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
       themeMode: ThemeMode.system,
       theme: FAAppTheme.lightTheme,
       darkTheme: FAAppTheme.darkTheme,
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: OnBoardingScreen(),
     );
   }
 }
