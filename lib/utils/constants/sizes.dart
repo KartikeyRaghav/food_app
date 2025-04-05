@@ -1,4 +1,3 @@
-
 class FASizes {
   // Padding and margin sizes
   static const double xs = 4.0;
@@ -19,8 +18,8 @@ class FASizes {
   static const double fontSizeLg = 18.0;
 
   // Button sizes
-  static const double buttonHeight = 18.0;
-  static const double buttonRadius = 12.0;
+  static const double buttonHeight = 16.0;
+  static const double buttonRadius = 40.0;
   static const double buttonWidth = 120.0;
   static const double buttonElevation = 4.0;
 
@@ -68,6 +67,3 @@ class FASizes {
   // Grid view spacing
   static const double gridViewSpacing = 16.0;
 }
-
-
-
