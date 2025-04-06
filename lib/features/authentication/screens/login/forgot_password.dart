@@ -50,25 +50,13 @@ class _ForgotPasswordState extends State<ForgotPassword> {
   }
 
   Widget _emailField(BuildContext context, bool dark) {
-    return TextField(
+    return TextFormField(
       controller: controllerEmail,
-      style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-        color: dark ? const Color(0xFFEAEEFA) : const Color(0xFF171717),
-      ),
       decoration: InputDecoration(
-        filled: dark,
-        fillColor: const Color(0xFF212121),
         hintText: FATexts.recoveryMail,
-        hintStyle: Theme.of(context).textTheme.bodyMedium,
-        border: const OutlineInputBorder(),
-        enabledBorder: OutlineInputBorder(
-          borderSide: BorderSide(
-            color: dark ? const Color(0xFF7A7A7A) : const Color(0xFF171717),
-          ),
-        ),
-        focusedBorder: const OutlineInputBorder(
-          borderSide: BorderSide(color: Color(0xFF3662CC)),
-        ),
+        hintStyle: Theme.of(
+          context,
+        ).textTheme.bodyMedium?.copyWith(color: FAColors.darkGrey),
       ),
       onEditingComplete: () {
         setState(() {});
@@ -79,12 +67,7 @@ class _ForgotPasswordState extends State<ForgotPassword> {
   Widget _continueBtn(BuildContext context) {
     return SizedBox(
       width: double.infinity,
-      child: ElevatedButton(
-        onPressed: () {
-         
-        },
-        child: Text(FATexts.tContinue),
-      ),
+      child: ElevatedButton(onPressed: () {}, child: Text(FATexts.tContinue)),
     );
   }
 }

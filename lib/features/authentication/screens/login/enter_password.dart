@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/gestures.dart';
 import 'package:food_app/common/styles/spacing_style.dart';
 import 'package:food_app/features/authentication/screens/login/forgot_password.dart';
+import 'package:food_app/features/presentation/screens/home/home.dart';
 import 'package:food_app/utils/constants/colors.dart';
 import 'package:food_app/utils/constants/sizes.dart';
 import 'package:food_app/utils/constants/text_strings.dart';
@@ -81,7 +82,20 @@ class _EnterPasswordState extends State<EnterPassword> {
   Widget _continueBtn(BuildContext context) {
     return SizedBox(
       width: double.infinity,
-      child: ElevatedButton(onPressed: () {}, child: Text(FATexts.signIn)),
+      child: ElevatedButton(
+        onPressed: () {
+          Navigator.pushAndRemoveUntil(
+            context,
+            MaterialPageRoute(
+              builder: (context) {
+                return HomePage();
+              },
+            ),
+            ModalRoute.withName("/SignIn"),
+          );
+        },
+        child: Text(FATexts.signIn),
+      ),
     );
   }
 
