@@ -1,21 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/gestures.dart';
 import 'package:food_app/common/styles/spacing_style.dart';
-import 'package:food_app/features/authentication/screens/login/enterpassword.dart';
+import 'package:food_app/features/authentication/screens/login/enter_password.dart';
+import 'package:food_app/features/authentication/screens/login/signup.dart';
 import 'package:food_app/utils/constants/colors.dart';
 import 'package:food_app/utils/constants/text_strings.dart';
 import 'package:food_app/utils/helpers/helper_functions.dart';
 
 import '../../../../utils/constants/sizes.dart';
 
-class SignInScreen extends StatefulWidget {
-  const SignInScreen({super.key});
+class SignIn extends StatefulWidget {
+  const SignIn({super.key});
 
   @override
-  State<SignInScreen> createState() => _SignInScreenState();
+  State<SignIn> createState() => _SignInState();
 }
 
-class _SignInScreenState extends State<SignInScreen> {
+class _SignInState extends State<SignIn> {
   final TextEditingController controllerEmail = TextEditingController();
 
   @override
@@ -36,11 +37,11 @@ class _SignInScreenState extends State<SignInScreen> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               _signinText(),
-              const SizedBox(height: FASizes.xl),
+              const SizedBox(height: FASizes.spaceBtwSections),
               _emailField(context, dark),
-              const SizedBox(height: FASizes.lg),
+              const SizedBox(height: FASizes.spaceBtwSections),
               _continueBtn(context),
-              const SizedBox(height: FASizes.lg),
+              const SizedBox(height: FASizes.spaceBtwSections),
               _createAccount(context),
             ],
           ),
@@ -64,7 +65,7 @@ class _SignInScreenState extends State<SignInScreen> {
         hintText: FATexts.email,
         hintStyle: Theme.of(
           context,
-        ).textTheme.bodyLarge?.copyWith(color: FAColors.darkGrey),
+        ).textTheme.bodyMedium?.copyWith(color: FAColors.darkGrey),
       ),
     );
   }
@@ -100,11 +101,11 @@ class _SignInScreenState extends State<SignInScreen> {
         children: [
           TextSpan(
             text: '${FATexts.dontHaveAccount} ',
-            style: Theme.of(context).textTheme.bodyMedium,
+            style: Theme.of(context).textTheme.bodySmall,
           ),
           TextSpan(
             text: FATexts.createAccount,
-            style: Theme.of(context).textTheme.bodyLarge,
+            style: Theme.of(context).textTheme.bodyMedium,
             recognizer:
                 TapGestureRecognizer()
                   ..onTap = () {
@@ -112,7 +113,7 @@ class _SignInScreenState extends State<SignInScreen> {
                       context,
                       MaterialPageRoute(
                         builder: (context) {
-                          return EnterPassword();
+                          return SignUp();
                         },
                       ),
                     );

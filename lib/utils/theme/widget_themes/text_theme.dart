@@ -15,12 +15,12 @@ class FATextTheme {
     titleMedium: const TextStyle().copyWith(fontSize: 16.0, fontWeight: FontWeight.w500, color: FAColors.dark),
     titleSmall: const TextStyle().copyWith(fontSize: 16.0, fontWeight: FontWeight.w400, color: FAColors.dark),
 
-    bodyLarge: const TextStyle().copyWith(fontSize: 14.0, fontWeight: FontWeight.w500, color: FAColors.dark),
-    bodyMedium: const TextStyle().copyWith(fontSize: 14.0, fontWeight: FontWeight.normal, color: FAColors.dark),
-    bodySmall: const TextStyle().copyWith(fontSize: 14.0, fontWeight: FontWeight.w500, color: FAColors.dark.withValues(alpha: 0.5)),
+    bodyLarge: const TextStyle().copyWith(fontSize: 14.0, fontWeight: FontWeight.w800, color: FAColors.dark),
+    bodyMedium: const TextStyle().copyWith(fontSize: 14.0, fontWeight: FontWeight.w600, color: FAColors.dark),
+    bodySmall: const TextStyle().copyWith(fontSize: 14.0, fontWeight: FontWeight.w400, color: FAColors.dark.withValues(alpha: 0.5)),
 
-    labelLarge: const TextStyle().copyWith(fontSize: 12.0, fontWeight: FontWeight.normal, color: FAColors.dark),
-    labelMedium: const TextStyle().copyWith(fontSize: 12.0, fontWeight: FontWeight.normal, color: FAColors.dark.withValues(alpha: 0.5)),
+    labelLarge: const TextStyle().copyWith(fontSize: 12.0, fontWeight: FontWeight.w400, color: FAColors.dark),
+    labelMedium: const TextStyle().copyWith(fontSize: 12.0, fontWeight: FontWeight.w300, color: FAColors.dark.withValues(alpha: 0.5)),
   );
 
   /// Customizable Dark Text Theme
@@ -33,11 +33,11 @@ class FATextTheme {
     titleMedium: const TextStyle().copyWith(fontSize: 16.0, fontWeight: FontWeight.w500, color: FAColors.light),
     titleSmall: const TextStyle().copyWith(fontSize: 16.0, fontWeight: FontWeight.w400, color: FAColors.light),
 
-    bodyLarge: const TextStyle().copyWith(fontSize: 14.0, fontWeight: FontWeight.w500, color: FAColors.light),
-    bodyMedium: const TextStyle().copyWith(fontSize: 14.0, fontWeight: FontWeight.normal, color: FAColors.light),
-    bodySmall: const TextStyle().copyWith(fontSize: 14.0, fontWeight: FontWeight.w500, color: FAColors.light.withValues(alpha: 0.5)),
+    bodyLarge: const TextStyle().copyWith(fontSize: 14.0, fontWeight: FontWeight.w800, color: FAColors.light),
+    bodyMedium: const TextStyle().copyWith(fontSize: 14.0, fontWeight: FontWeight.w600, color: FAColors.light),
+    bodySmall: const TextStyle().copyWith(fontSize: 14.0, fontWeight: FontWeight.w400, color: FAColors.light.withValues(alpha: 0.5)),
 
-    labelLarge: const TextStyle().copyWith(fontSize: 12.0, fontWeight: FontWeight.normal, color: FAColors.light),
-    labelMedium: const TextStyle().copyWith(fontSize: 12.0, fontWeight: FontWeight.normal, color: FAColors.light.withValues(alpha: 0.5)),
+    labelLarge: const TextStyle().copyWith(fontSize: 12.0, fontWeight: FontWeight.w400, color: FAColors.light),
+    labelMedium: const TextStyle().copyWith(fontSize: 12.0, fontWeight: FontWeight.w300, color: FAColors.light.withValues(alpha: 0.5)),
   );
 }

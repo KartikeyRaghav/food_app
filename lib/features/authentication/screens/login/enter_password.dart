@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/gestures.dart';
 import 'package:food_app/common/styles/spacing_style.dart';
+import 'package:food_app/features/authentication/screens/login/forgot_password.dart';
 import 'package:food_app/utils/constants/colors.dart';
 import 'package:food_app/utils/constants/sizes.dart';
 import 'package:food_app/utils/constants/text_strings.dart';
@@ -32,11 +33,11 @@ class _EnterPasswordState extends State<EnterPassword> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               _headerText(context),
-              const SizedBox(height: FASizes.xl),
+              const SizedBox(height: FASizes.spaceBtwSections),
               _passwordField(context, dark),
-              const SizedBox(height: FASizes.lg),
+              const SizedBox(height: FASizes.spaceBtwSections),
               _continueBtn(context),
-              const SizedBox(height: FASizes.lg),
+              const SizedBox(height: FASizes.spaceBtwSections),
               _forgotPassword(context),
             ],
           ),
@@ -61,7 +62,7 @@ class _EnterPasswordState extends State<EnterPassword> {
         hintText: FATexts.password,
         hintStyle: Theme.of(
           context,
-        ).textTheme.bodyLarge?.copyWith(color: FAColors.darkGrey),
+        ).textTheme.bodyMedium?.copyWith(color: FAColors.darkGrey),
         suffixIcon: IconButton(
           icon: Icon(
             isObscure ? Icons.visibility_off : Icons.visibility,
@@ -87,12 +88,12 @@ class _EnterPasswordState extends State<EnterPassword> {
   Widget _forgotPassword(BuildContext context) {
     return RichText(
       text: TextSpan(
-        style: Theme.of(context).textTheme.bodyMedium,
+        style: Theme.of(context).textTheme.bodySmall,
         children: [
           TextSpan(text: '${FATexts.forgotPassword} '),
           TextSpan(
             text: ' ${FATexts.reset}',
-            style: Theme.of(context).textTheme.bodyLarge,
+            style: Theme.of(context).textTheme.bodyMedium,
             recognizer:
                 TapGestureRecognizer()
                   ..onTap = () {
@@ -100,7 +101,7 @@ class _EnterPasswordState extends State<EnterPassword> {
                       context,
                       MaterialPageRoute(
                         builder: (context) {
-                          return Scaffold(appBar: AppBar());
+                          return ForgotPassword();
                         },
                       ),
                     );

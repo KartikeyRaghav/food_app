@@ -22,7 +22,7 @@ class OnboardingController extends GetxController {
         context,
         MaterialPageRoute(
           builder: (context) {
-            return SignInScreen();
+            return SignIn();
           },
         ),
       );
