@@ -38,6 +38,7 @@ flutter:
   assets:
     - assets/images/dishes/
     - assets/images/onboarding/
+    - assets/images/home/
     - assets/icons/payment_methods/
     - assets/logos/
 

@@ -6,6 +6,7 @@ import 'package:food_app/features/authentication/screens/login/signup.dart';
 import 'package:food_app/utils/constants/colors.dart';
 import 'package:food_app/utils/constants/text_strings.dart';
 import 'package:food_app/utils/helpers/helper_functions.dart';
+import 'package:get/get.dart';
 
 import '../../../../utils/constants/sizes.dart';
 
@@ -81,14 +82,7 @@ class _SignInState extends State<SignIn> {
             ).showSnackBar(SnackBar(content: Text(FATexts.email)));
             return;
           }
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) {
-                return EnterPassword();
-              },
-            ),
-          );
+          Get.to(() => EnterPassword());
         },
         child: const Text(FATexts.tContinue),
       ),
@@ -109,14 +103,7 @@ class _SignInState extends State<SignIn> {
             recognizer:
                 TapGestureRecognizer()
                   ..onTap = () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) {
-                          return SignUp();
-                        },
-                      ),
-                    );
+                    Get.to(() => SignUp());
                   },
           ),
         ],

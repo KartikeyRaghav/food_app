@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:food_app/features/authentication/screens/login/signin.dart';
 import 'package:get/get.dart';
-
-import '../../screens/login/signin.dart';
+// import 'package:http/http.dart';
 
 class OnboardingController extends GetxController {
   static OnboardingController get instance => Get.find();
@@ -18,14 +18,7 @@ class OnboardingController extends GetxController {
 
   void nextPage(BuildContext context) {
     if (currentPageIndex.value == 2) {
-      Navigator.pushReplacement(
-        context,
-        MaterialPageRoute(
-          builder: (context) {
-            return SignIn();
-          },
-        ),
-      );
+      Get.offAll(() => SignIn());
     } else {
       int page = currentPageIndex.value + 1;
       pageController.jumpToPage(page);

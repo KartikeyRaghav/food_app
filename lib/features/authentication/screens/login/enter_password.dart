@@ -7,6 +7,8 @@ import 'package:food_app/utils/constants/colors.dart';
 import 'package:food_app/utils/constants/sizes.dart';
 import 'package:food_app/utils/constants/text_strings.dart';
 import 'package:food_app/utils/helpers/helper_functions.dart';
+import 'package:get/get_navigation/get_navigation.dart';
+import 'package:get/utils.dart';
 
 class EnterPassword extends StatefulWidget {
   const EnterPassword({super.key});
@@ -84,15 +86,7 @@ class _EnterPasswordState extends State<EnterPassword> {
       width: double.infinity,
       child: ElevatedButton(
         onPressed: () {
-          Navigator.pushAndRemoveUntil(
-            context,
-            MaterialPageRoute(
-              builder: (context) {
-                return HomePage();
-              },
-            ),
-            ModalRoute.withName("/SignIn"),
-          );
+          Get.offAll(() => HomePage());
         },
         child: Text(FATexts.signIn),
       ),
@@ -111,14 +105,7 @@ class _EnterPasswordState extends State<EnterPassword> {
             recognizer:
                 TapGestureRecognizer()
                   ..onTap = () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) {
-                          return ForgotPassword();
-                        },
-                      ),
-                    );
+                    Get.to(() => ForgotPassword());
                   },
           ),
         ],

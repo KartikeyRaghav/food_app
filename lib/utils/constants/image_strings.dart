@@ -47,6 +47,7 @@ class FAImages {
   static const String onBoarding1 = "assets/images/onboarding/onboarding 1.json";
   static const String onBoarding2 = "assets/images/onboarding/onboarding 2.json";
   static const String onBoarding3 = "assets/images/onboarding/onboarding 3.json";
+  static const String homepage1 = "assets/images/home/homepage 1.json";
 
   // -- Products
   // static const String productImage1 = "assets/images/products/nike-shoes.png";
