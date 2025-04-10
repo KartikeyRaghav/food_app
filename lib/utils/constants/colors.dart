@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class FAColors {
   // App theme colors
-  static const Color primary = Color(0xFF3662CC);
+  static const Color primary = Color(0xFFfc6011);
   static const Color secondary = Color(0xFFFFE24B);
   static const Color accent = Color(0xFFb0c7ff);
 
@@ -21,7 +21,7 @@ class FAColors {
   static Color darkContainer = FAColors.white.withValues(alpha: 0.1);
 
   // Button colors
-  static const Color buttonPrimary = Color(0xFF3662CC);
+  static const Color buttonPrimary = Color(0xFFfc6011);
   static const Color buttonSecondary = Color(0xFF6C757D);
   static const Color buttonDisabled = Color(0xFFC4C4C4);
 
