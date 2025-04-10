@@ -16,11 +16,11 @@ class FATextFormFieldTheme {
     floatingLabelStyle: const TextStyle().copyWith(color: FAColors.black.withValues(alpha: 0.8)),
     border: const OutlineInputBorder().copyWith(
       borderRadius: BorderRadius.circular(FASizes.inputFieldRadius),
-      borderSide: const BorderSide(width: 1, color: FAColors.grey),
+      borderSide: const BorderSide(width: 1, color: FAColors.darkGrey),
     ),
     enabledBorder: const OutlineInputBorder().copyWith(
       borderRadius: BorderRadius.circular(FASizes.inputFieldRadius),
-      borderSide: const BorderSide(width: 1, color: FAColors.grey),
+      borderSide: const BorderSide(width: 1, color: FAColors.darkGrey),
     ),
     focusedBorder:const OutlineInputBorder().copyWith(
       borderRadius: BorderRadius.circular(FASizes.inputFieldRadius),

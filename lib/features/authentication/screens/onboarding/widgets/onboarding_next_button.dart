@@ -16,7 +16,7 @@ class OnBoardingNextButton extends StatelessWidget {
       right: FASizes.defaultSpace,
       bottom: FADeviceUtils.getBottomNavigationBarHeight(),
       child: ElevatedButton(
-        onPressed: () => OnboardingController.instance.nextPage(),
+        onPressed: () => OnboardingController.instance.nextPage(context),
         style: ElevatedButton.styleFrom(
             shape: CircleBorder(), backgroundColor: FAColors.primary),
         child: Icon(

@@ -1,7 +1,7 @@
-import 'package:flutter/widgets.dart';
+import 'package:flutter/material.dart';
+import 'package:food_app/features/authentication/screens/login/signin.dart';
 import 'package:get/get.dart';
-import 'package:get_storage/get_storage.dart';
-// import 'package:food_app/features/authentication/screens/login/login.dart';
+// import 'package:http/http.dart';
 
 class OnboardingController extends GetxController {
   static OnboardingController get instance => Get.find();
@@ -16,11 +16,9 @@ class OnboardingController extends GetxController {
     pageController.jumpTo(index);
   }
 
-  void nextPage() {
+  void nextPage(BuildContext context) {
     if (currentPageIndex.value == 2) {
-      final storage = GetStorage();
-      storage.write('isFirstTime', false);
-      // Get.offAll(LoginScreen());
+      Get.offAll(() => SignIn());
     } else {
       int page = currentPageIndex.value + 1;
       pageController.jumpToPage(page);
