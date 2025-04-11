@@ -3,8 +3,8 @@
 /// This class contains all the App Images in String formats.
 class FAImages {
   // -- App Logos
-  static const String darkAppLogo = "assets/logos/logo_small.png";
-  static const String lightAppLogo = "assets/logos/logo_small.png";
+  static const String logo = "assets/logos/logo_small.png";
+  static const String logoFit = "assets/logos/logo_fit.png";
 
   // -- Social Logos
   static const String google = "assets/logos/google-icon.png";
@@ -18,6 +18,7 @@ class FAImages {
   static const String onBoarding3 =
       "assets/images/onboarding/onboarding 3.json";
 
-      // Option background
-      static const String optionBackground = 'assets/dishes/welcome_top_shape.png';
+  // Option background
+  static const String optionBackground =
+      'assets/images/dishes/welcome_top_shape.png';
 }

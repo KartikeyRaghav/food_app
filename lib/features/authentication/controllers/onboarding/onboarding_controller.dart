@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:food_app/features/authentication/screens/login/signin.dart';
+import 'package:food_app/features/authentication/screens/option/option.dart';
 import 'package:get/get.dart';
 // import 'package:http/http.dart';
 
@@ -18,7 +18,7 @@ class OnboardingController extends GetxController {
 
   void nextPage(BuildContext context) {
     if (currentPageIndex.value == 2) {
-      Get.offAll(() => SignIn());
+      Get.offAll(() => OptionScreen());
     } else {
       int page = currentPageIndex.value + 1;
       pageController.jumpToPage(page);

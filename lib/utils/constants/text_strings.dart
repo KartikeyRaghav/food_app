@@ -32,6 +32,7 @@ class FATexts {
   static const String forgotPassword = "Forgot your Password?";
   static const String reset = "Reset";
   static const String signIn = "Sign In";
+  static const String signUp = "Sign Up";
   static const String dontHaveAccount = "Don't have an account?";
   static const String createAccount = "Create One";
   static const String orSignInWith = "or sign in with";
