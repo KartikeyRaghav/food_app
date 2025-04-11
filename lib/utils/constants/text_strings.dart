@@ -20,6 +20,9 @@ class FATexts {
   static const String onBoardingSubTitle3 =
       "Real time tracking of your food on the app once you placed the order";
 
+  static const String optionDesc =
+      'Discover the best foods from your campus outlets and fast delivery to your doorstep';
+
   // -- Authentication Forms
   static const String firstName = "First Name";
   static const String lastName = "Last Name";
@@ -34,7 +37,7 @@ class FATexts {
   static const String signIn = "Sign In";
   static const String signUp = "Sign Up";
   static const String dontHaveAccount = "Don't have an account?";
-  static const String createAccount = "Create One";
+  static const String createAccount = "Create An Account";
   static const String orSignInWith = "or sign in with";
   static const String orSignUpWith = "or sign up with";
   static const String iAgreeTo = "I agree to";
@@ -63,11 +66,4 @@ class FATexts {
       "Your account successfully created!";
   static const String yourAccountCreatedSubTitle =
       "Welcome to Your Ultimate Shopping Destination: Your Account is Created, Unleash the Joy of Seamless Online Shopping!";
-
-  // -- Product
-  static const String popularProducts = "Popular Products";
-
-  // -- Home
-  static const String homeAppbarTitle = "Good day for shopping";
-  static const String homeAppbarSubTitle = "Taimoor Sikander";
 }

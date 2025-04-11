@@ -45,11 +45,11 @@ class OptionScreen extends StatelessWidget {
               child: Column(
                 children: [
                   Text(
-                    'Campus Crave',
+                    FATexts.appName,
                     style: TextStyle(fontWeight: FontWeight.w900, fontSize: 32),
                   ),
                   Text(
-                    'Discover the best foods from your campus outlets and fast delivery to your doorstep',
+                    FATexts.optionDesc,
                     style: TextStyle(
                       fontWeight: FontWeight.w400,
                       fontSize: 16,
