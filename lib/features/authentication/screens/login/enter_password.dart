@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/gestures.dart';
 import 'package:food_app/common/styles/spacing_style.dart';
 import 'package:food_app/features/authentication/screens/login/forgot_password.dart';
-import 'package:food_app/features/presentation/screens/home/home.dart';
+import 'package:food_app/navigation_menu.dart';
 import 'package:food_app/utils/constants/colors.dart';
 import 'package:food_app/utils/constants/sizes.dart';
 import 'package:food_app/utils/constants/text_strings.dart';
@@ -86,7 +86,7 @@ class _EnterPasswordState extends State<EnterPassword> {
       width: double.infinity,
       child: ElevatedButton(
         onPressed: () {
-          Get.offAll(() => HomePage());
+          Get.offAll(() => NavigationMenu());
         },
         child: Text(FATexts.signIn),
       ),
