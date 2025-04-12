@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:food_app/common/styles/spacing_style.dart';
+import 'package:food_app/common/styles/spacing_styles.dart';
 import 'package:food_app/features/presentation/controllers/homepage_controller.dart';
 import 'package:food_app/utils/constants/colors.dart';
 import 'package:food_app/utils/constants/sizes.dart';

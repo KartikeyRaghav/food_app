@@ -21,4 +21,11 @@ class FAImages {
   // Option background
   static const String optionBackground =
       'assets/images/dishes/welcome_top_shape.png';
+
+  static const String deliveredEmailIllustration =
+      "assets/images/animations/sammy-line-man-receives-a-mail.png";
+  static const String staticSuccessIllustration =
+      "assets/images/animations/sammy-line-success.png";
+
+  static const String animalIcon = "assets/icons/icons8-dog-heart-64.png";
 }

@@ -6,7 +6,7 @@ class FATexts {
   static const String done = "Done";
   static const String submit = "Submit";
   static const String appName = "Campus Crave";
-  static const String tContinue = "Continue";
+  static const String fContinue = "Continue";
 
   // -- OnBoarding Texts
   static const String onBoardingTitle1 = "Find Food You Love";
@@ -53,6 +53,8 @@ class FATexts {
       "Discover Limitless Choices and Unmatched Convenience.";
   static const String signupTitle = "Let’s create your account";
   static const String forgetPasswordTitle = "Forget password";
+  static const String forgetPasswordSubTitle =
+      "Don’t worry sometimes people can forget too, enter your email and we will send you a password reset link.";
   static const String recoveryMail = "Enter Recovery Email";
   static const String changeYourPasswordTitle = "Password Reset Email Sent";
   static const String changeYourPasswordSubTitle =

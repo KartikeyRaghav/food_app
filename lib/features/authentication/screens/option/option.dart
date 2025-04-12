@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:food_app/features/authentication/screens/login/signin.dart';
-import 'package:food_app/features/authentication/screens/login/signup.dart';
+import 'package:food_app/features/authentication/screens/login/login.dart';
+import 'package:food_app/features/authentication/screens/signup/signup.dart';
 import 'package:food_app/utils/constants/colors.dart';
 import 'package:food_app/utils/constants/image_strings.dart';
 import 'package:food_app/utils/constants/sizes.dart';
@@ -61,7 +61,7 @@ class OptionScreen extends StatelessWidget {
                   SizedBox(
                     width: double.infinity,
                     child: ElevatedButton(
-                      onPressed: () => Get.to(() => SignIn()),
+                      onPressed: () => Get.to(() => LoginScreen()),
                       child: Text(
                         FATexts.signIn,
                         style: TextStyle(fontWeight: FontWeight.bold),
@@ -72,7 +72,7 @@ class OptionScreen extends StatelessWidget {
                   SizedBox(
                     width: double.infinity,
                     child: OutlinedButton(
-                      onPressed: () => Get.to(() => SignUp()),
+                      onPressed: () => Get.to(() => SignUpScreen()),
                       child: Text(
                         FATexts.signUp,
                         style: TextStyle(fontWeight: FontWeight.bold),
