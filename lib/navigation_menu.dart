@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:food_app/common/widgets/tab_button.dart';
 import 'package:food_app/features/presentation/screens/home/home.dart';
+import 'package:food_app/features/presentation/screens/menu/menu_screen.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:food_app/utils/constants/colors.dart';
 
@@ -12,11 +13,11 @@ class NavigationMenu extends StatefulWidget {
 }
 
 class _NavigationMenuState extends State<NavigationMenu> {
+  Widget selectPageView = HomeScreen();
   @override
   Widget build(BuildContext context) {
     int selctTab = 2;
     PageStorageBucket storageBucket = PageStorageBucket();
-    Widget selectPageView = HomeScreen();
 
     return Scaffold(
       // floatingActionButton: FloatingActionButton(
@@ -96,7 +97,7 @@ class _NavigationMenuState extends State<NavigationMenu> {
                 onTap: () {
                   if (selctTab != 0) {
                     selctTab = 0;
-                    selectPageView = Container();
+                    selectPageView = MenuScreen();
                   }
                   if (mounted) {
                     setState(() {});
