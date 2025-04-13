@@ -36,6 +36,10 @@ class RoundTextfield extends StatelessWidget {
               controller: controller,
               obscureText: obscureText,
               keyboardType: keyboardType,
+              style: TextStyle(
+                color: FAColors.primary,
+                fontWeight: FontWeight.normal,
+              ),
               decoration: InputDecoration(
                 contentPadding: const EdgeInsets.symmetric(horizontal: 20),
                 enabledBorder: InputBorder.none,

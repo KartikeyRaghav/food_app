@@ -28,9 +28,9 @@ class CategoryCell extends StatelessWidget {
               cObj["name"],
               textAlign: TextAlign.center,
               style: TextStyle(
-                color: FAColors.primary,
+                color: FAColors.white,
                 fontSize: 14,
-                fontWeight: FontWeight.w700,
+                fontWeight: FontWeight.w600,
               ),
             ),
           ],

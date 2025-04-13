@@ -116,16 +116,9 @@ class HomeScreen extends StatelessWidget {
                       ),
                     ),
                     IconButton(
-                      onPressed: () {
-                        // Navigator.push(
-                        //   context,
-                        //   MaterialPageRoute(
-                        //     builder: (context) => const MyOrderView(),
-                        //   ),
-                        // );
-                      },
+                      onPressed: () {},
                       icon: Icon(
-                        Iconsax.shopping_cart1,
+                        Iconsax.shopping_cart,
                         size: 25,
                         color: FAColors.white,
                       ),
@@ -159,7 +152,11 @@ class HomeScreen extends StatelessWidget {
                           ),
                         ),
                         const SizedBox(width: 25),
-                        Icon(Iconsax.drop, size: 12, color: FAColors.primary),
+                        Icon(
+                          Iconsax.arrow_down_1,
+                          size: 15,
+                          color: FAColors.primary,
+                        ),
                       ],
                     ),
                   ],
@@ -174,7 +171,11 @@ class HomeScreen extends StatelessWidget {
                   left: Container(
                     alignment: Alignment.center,
                     width: 30,
-                    child: Icon(Iconsax.search_favorite, size: 20),
+                    child: Icon(
+                      Iconsax.search_normal,
+                      size: 20,
+                      color: FAColors.textSecondary,
+                    ),
                   ),
                 ),
               ),
@@ -191,6 +192,7 @@ class HomeScreen extends StatelessWidget {
                   }),
                 ),
               ),
+              SizedBox(height: 10),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 20),
                 child: ViewAllTitleRow(
@@ -208,6 +210,7 @@ class HomeScreen extends StatelessWidget {
                   return PopularRestaurantRow(pObj: pObj, onTap: () {});
                 }),
               ),
+              SizedBox(height: 10),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 20),
                 child: ViewAllTitleRow(title: "Most Popular", onView: () {}),
@@ -224,6 +227,7 @@ class HomeScreen extends StatelessWidget {
                   }),
                 ),
               ),
+              SizedBox(height: 10),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 20),
                 child: ViewAllTitleRow(title: "Recent Items", onView: () {}),

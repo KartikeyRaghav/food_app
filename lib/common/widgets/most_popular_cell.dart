@@ -30,12 +30,12 @@ class MostPopularCell extends StatelessWidget {
               mObj["name"],
               textAlign: TextAlign.center,
               style: TextStyle(
-                color: FAColors.textSecondary,
-                fontSize: 18,
+                color: FAColors.textWhite,
+                fontSize: 16,
                 fontWeight: FontWeight.w700,
               ),
             ),
-            const SizedBox(height: 4),
+            const SizedBox(height: 2),
             Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
@@ -46,9 +46,9 @@ class MostPopularCell extends StatelessWidget {
                 ),
 
                 Text(
-                  " . ",
+                  " - ",
                   textAlign: TextAlign.center,
-                  style: TextStyle(color: FAColors.primary, fontSize: 12),
+                  style: TextStyle(color: FAColors.textSecondary, fontSize: 12),
                 ),
 
                 Text(

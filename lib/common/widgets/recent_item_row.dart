@@ -35,12 +35,12 @@ class RecentItemRow extends StatelessWidget {
                     rObj["name"],
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                      color: FAColors.primary,
-                      fontSize: 18,
+                      color: FAColors.textWhite,
+                      fontSize: 16,
                       fontWeight: FontWeight.w700,
                     ),
                   ),
-                  const SizedBox(height: 8),
+                  const SizedBox(height: 4),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
@@ -53,9 +53,9 @@ class RecentItemRow extends StatelessWidget {
                         ),
                       ),
                       Text(
-                        " . ",
+                        " - ",
                         textAlign: TextAlign.center,
-                        style: TextStyle(color: FAColors.primary, fontSize: 11),
+                        style: TextStyle(color: FAColors.textSecondary, fontSize: 11),
                       ),
                       Text(
                         rObj["food_type"],

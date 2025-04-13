@@ -26,7 +26,6 @@ class PopularRestaurantRow extends StatelessWidget {
               height: 200,
               fit: BoxFit.cover,
             ),
-            const SizedBox(width: 8),
 
             const SizedBox(height: 12),
 
@@ -39,12 +38,12 @@ class PopularRestaurantRow extends StatelessWidget {
                     pObj["name"],
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                      color: FAColors.primary,
-                      fontSize: 18,
+                      color: FAColors.white,
+                      fontSize: 16,
                       fontWeight: FontWeight.w700,
                     ),
                   ),
-                  const SizedBox(height: 8),
+                  const SizedBox(height: 2),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
@@ -82,9 +81,12 @@ class PopularRestaurantRow extends StatelessWidget {
                         ),
                       ),
                       Text(
-                        " . ",
+                        " - ",
                         textAlign: TextAlign.center,
-                        style: TextStyle(color: FAColors.primary, fontSize: 11),
+                        style: TextStyle(
+                          color: FAColors.textSecondary,
+                          fontSize: 11,
+                        ),
                       ),
                       Text(
                         pObj["food_type"],
