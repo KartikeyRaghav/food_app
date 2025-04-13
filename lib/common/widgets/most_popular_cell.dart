@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:food_app/utils/constants/colors.dart';
+import 'package:iconsax/iconsax.dart';
 
 class MostPopularCell extends StatelessWidget {
   final Map mObj;
@@ -57,13 +58,7 @@ class MostPopularCell extends StatelessWidget {
                 ),
 
                 const SizedBox(width: 8),
-
-                Image.asset(
-                  "assets/img/rate.png",
-                  width: 10,
-                  height: 10,
-                  fit: BoxFit.cover,
-                ),
+                Icon(Iconsax.star5, size: 10, fill: 1, color: FAColors.primary),
                 const SizedBox(width: 4),
                 Text(
                   mObj["rate"],

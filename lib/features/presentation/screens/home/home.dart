@@ -8,22 +8,21 @@ import 'package:food_app/common/widgets/view_all_title_row.dart';
 import 'package:food_app/utils/constants/colors.dart';
 import 'package:iconsax/iconsax.dart';
 
-
 class HomeScreen extends StatelessWidget {
   HomeScreen({super.key});
 
   final TextEditingController txtSearch = TextEditingController();
 
   final List catArr = [
-    {"image": "assets/img/cat_offer.png", "name": "Offers"},
-    {"image": "assets/img/cat_sri.png", "name": "Sri Lankan"},
-    {"image": "assets/img/cat_3.png", "name": "Italian"},
-    {"image": "assets/img/cat_4.png", "name": "Indian"},
+    {"image": "assets/images/dishes/cat_offer.png", "name": "Offers"},
+    {"image": "assets/images/dishes/cat_sri.png", "name": "Sri Lankan"},
+    {"image": "assets/images/dishes/cat_3.png", "name": "Italian"},
+    {"image": "assets/images/dishes/cat_4.png", "name": "Indian"},
   ];
 
   final List popArr = [
     {
-      "image": "assets/img/res_1.png",
+      "image": "assets/images/dishes/res_1.png",
       "name": "Minute by tuk tuk",
       "rate": "4.9",
       "rating": "124",
@@ -31,7 +30,7 @@ class HomeScreen extends StatelessWidget {
       "food_type": "Western Food",
     },
     {
-      "image": "assets/img/res_2.png",
+      "image": "assets/images/dishes/res_2.png",
       "name": "Café de Noir",
       "rate": "4.9",
       "rating": "124",
@@ -39,7 +38,7 @@ class HomeScreen extends StatelessWidget {
       "food_type": "Western Food",
     },
     {
-      "image": "assets/img/res_3.png",
+      "image": "assets/images/dishes/res_3.png",
       "name": "Bakes by Tella",
       "rate": "4.9",
       "rating": "124",
@@ -50,7 +49,7 @@ class HomeScreen extends StatelessWidget {
 
   final List mostPopArr = [
     {
-      "image": "assets/img/m_res_1.png",
+      "image": "assets/images/dishes/m_res_1.png",
       "name": "Minute by tuk tuk",
       "rate": "4.9",
       "rating": "124",
@@ -58,7 +57,7 @@ class HomeScreen extends StatelessWidget {
       "food_type": "Western Food",
     },
     {
-      "image": "assets/img/m_res_2.png",
+      "image": "assets/images/dishes/m_res_2.png",
       "name": "Café de Noir",
       "rate": "4.9",
       "rating": "124",
@@ -69,7 +68,7 @@ class HomeScreen extends StatelessWidget {
 
   final List recentArr = [
     {
-      "image": "assets/img/item_1.png",
+      "image": "assets/images/dishes/item_1.png",
       "name": "Mulberry Pizza by Josh",
       "rate": "4.9",
       "rating": "124",
@@ -77,7 +76,7 @@ class HomeScreen extends StatelessWidget {
       "food_type": "Western Food",
     },
     {
-      "image": "assets/img/item_2.png",
+      "image": "assets/images/dishes/item_2.png",
       "name": "Barita",
       "rate": "4.9",
       "rating": "124",
@@ -85,7 +84,7 @@ class HomeScreen extends StatelessWidget {
       "food_type": "Western Food",
     },
     {
-      "image": "assets/img/item_3.png",
+      "image": "assets/images/dishes/item_3.png",
       "name": "Pizza Rush Hour",
       "rate": "4.9",
       "rating": "124",
@@ -125,10 +124,9 @@ class HomeScreen extends StatelessWidget {
                         //   ),
                         // );
                       },
-                      icon: Image.asset(
-                        "assets/img/shopping_cart.png",
-                        width: 25,
-                        height: 25,
+                      icon: Icon(
+                        Iconsax.shopping_cart1,
+                        size: 25,
                         color: FAColors.white,
                       ),
                     ),
@@ -161,11 +159,7 @@ class HomeScreen extends StatelessWidget {
                           ),
                         ),
                         const SizedBox(width: 25),
-                        Image.asset(
-                          "assets/img/dropdown.png",
-                          width: 12,
-                          height: 12,
-                        ),
+                        Icon(Iconsax.drop, size: 12, color: FAColors.primary),
                       ],
                     ),
                   ],
@@ -180,11 +174,7 @@ class HomeScreen extends StatelessWidget {
                   left: Container(
                     alignment: Alignment.center,
                     width: 30,
-                    child: Image.asset(
-                      "assets/img/search.png",
-                      width: 20,
-                      height: 20,
-                    ),
+                    child: Icon(Iconsax.search_favorite, size: 20),
                   ),
                 ),
               ),
