@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:food_app/features/presentation/screens/home/home.dart';
+import 'package:food_app/navigation_menu.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:food_app/features/authentication/screens/password_configuration/forgot_password.dart';
@@ -52,7 +52,7 @@ class FALoginForm extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: () => Get.to(() => HomePage()),
+                onPressed: () => Get.to(() => NavigationMenu()),
                 child: Text(FATexts.signIn),
               ),
             ),

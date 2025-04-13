@@ -8,8 +8,8 @@ import 'package:food_app/utils/theme/widget_themes/search_bar_field_theme.dart';
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
 
-class HomePage extends StatelessWidget {
-  HomePage({super.key});
+class HomeScreen extends StatelessWidget {
+  HomeScreen({super.key});
   final controller = Get.put(HomeController());
 
   @override

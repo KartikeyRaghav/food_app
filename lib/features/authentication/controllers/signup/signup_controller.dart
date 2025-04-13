@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:food_app/features/presentation/screens/home/home.dart';
 import 'package:get/get.dart';
 import 'package:food_app/utils/constants/image_strings.dart';
-import 'package:food_app/utils/helpers/network_manager.dart';
 import 'package:food_app/utils/popups/full_screen_loader.dart';
 import 'package:food_app/utils/popups/loaders.dart';
 
@@ -26,9 +25,6 @@ class SignupController extends GetxController {
         FAImages.animalIcon,
       );
 
-      final isConnected = await NetworkManager.instance.isConnected();
-      if (!isConnected) return;
-
       if (!signupFormKey.currentState!.validate()) return;
 
       if (!privacyPolicy.value) {
@@ -39,7 +35,7 @@ class SignupController extends GetxController {
         );
         return;
       }
-      Get.offAll(() => HomePage());
+      Get.offAll(() => HomeScreen());
 
       // final user = UserModel
     } catch (e) {
