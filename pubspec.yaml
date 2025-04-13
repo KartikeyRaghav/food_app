@@ -41,6 +41,7 @@ flutter:
     - assets/images/home/
     - assets/icons/payment_methods/
     - assets/icons/
+    - assets/img/
     - assets/logos/
 
   fonts:
