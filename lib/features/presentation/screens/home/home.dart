@@ -5,6 +5,7 @@ import 'package:food_app/common/widgets/most_popular_cell.dart';
 import 'package:food_app/common/widgets/popular_resutaurant_row.dart';
 import 'package:food_app/common/widgets/recent_item_row.dart';
 import 'package:food_app/common/widgets/view_all_title_row.dart';
+import 'package:food_app/features/presentation/screens/more/my_order_view.dart';
 import 'package:food_app/utils/constants/colors.dart';
 import 'package:iconsax/iconsax.dart';
 
@@ -116,7 +117,14 @@ class HomeScreen extends StatelessWidget {
                       ),
                     ),
                     IconButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const MyOrderView(),
+                          ),
+                        );
+                      },
                       icon: Icon(
                         Iconsax.shopping_cart,
                         size: 25,

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:food_app/common/widgets/round_textfield.dart';
+import 'package:food_app/features/presentation/screens/more/my_order_view.dart';
 import 'package:food_app/utils/constants/colors.dart';
 import 'package:iconsax/iconsax.dart';
 
@@ -72,7 +73,14 @@ class MenuScreen extends StatelessWidget {
                           ),
                         ),
                         IconButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const MyOrderView(),
+                              ),
+                            );
+                          },
                           icon: Icon(
                             Iconsax.shopping_cart,
                             size: 25,

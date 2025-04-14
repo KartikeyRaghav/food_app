@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:food_app/common/widgets/round_icon_button.dart';
+import 'package:food_app/features/presentation/screens/more/my_order_view.dart';
 import 'package:food_app/utils/constants/colors.dart';
 import 'package:iconsax/iconsax.dart';
 
@@ -468,14 +469,14 @@ class _ItemDetailsViewState extends State<ItemDetailsView> {
                                         ),
                                         InkWell(
                                           onTap: () {
-                                            // Navigator.push(
-                                            //   context,
-                                            //   MaterialPageRoute(
-                                            //     builder:
-                                            //         (context) =>
-                                            //             const MyOrderView(),
-                                            //   ),
-                                            // );
+                                            Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                builder:
+                                                    (context) =>
+                                                        const MyOrderView(),
+                                              ),
+                                            );
                                           },
                                           child: Container(
                                             width: 45,
