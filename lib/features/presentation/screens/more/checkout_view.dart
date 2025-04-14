@@ -168,7 +168,9 @@ class _CheckoutViewState extends State<CheckoutView> {
                             color: FAColors.white,
                             borderRadius: BorderRadius.circular(5),
                             border: Border.all(
-                              color: FAColors.textSecondary.withOpacity(0.2),
+                              color: FAColors.textSecondary.withValues(
+                                alpha: 0.2,
+                              ),
                             ),
                           ),
                           child: Row(
@@ -294,7 +296,7 @@ class _CheckoutViewState extends State<CheckoutView> {
                     ),
                     const SizedBox(height: 15),
                     Divider(
-                      color: FAColors.textSecondary.withOpacity(0.5),
+                      color: FAColors.textSecondary.withValues(alpha: 0.5),
                       height: 1,
                     ),
                     const SizedBox(height: 15),

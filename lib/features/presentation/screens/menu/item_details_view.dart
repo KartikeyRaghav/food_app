@@ -109,7 +109,6 @@ class _ItemDetailsViewState extends State<ItemDetailsView> {
                                                 color: FAColors.primary,
                                               ),
                                           onRatingUpdate: (rating) {
-                                            print(rating);
                                           },
                                         ),
                                       ),
@@ -182,7 +181,7 @@ class _ItemDetailsViewState extends State<ItemDetailsView> {
                                 horizontal: 25,
                               ),
                               child: Divider(
-                                color: FAColors.textSecondary.withOpacity(0.4),
+                                color: FAColors.textSecondary.withValues(alpha: 0.4),
                                 height: 1,
                               ),
                             ),

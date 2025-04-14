@@ -35,7 +35,6 @@ class NavigationMenu extends StatelessWidget {
           selectedIndex: controller.selectedIndex.value,
           onDestinationSelected: (index) {
             controller.selectedIndex.value = index;
-            print(index);
           },
           backgroundColor: dark ? FAColors.black : Colors.white,
           indicatorColor:

@@ -88,7 +88,7 @@ class _PaymentDetailsViewState extends State<PaymentDetailsView> {
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 25),
                 child: Divider(
-                  color: FAColors.textSecondary.withOpacity(0.4),
+                  color: FAColors.textSecondary.withValues(alpha: 0.4),
                   height: 1,
                 ),
               ),
@@ -133,7 +133,7 @@ class _PaymentDetailsViewState extends State<PaymentDetailsView> {
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 35),
                       child: Divider(
-                        color: FAColors.textSecondary.withOpacity(0.4),
+                        color: FAColors.textSecondary.withValues(alpha: 0.4),
                         height: 1,
                       ),
                     ),
@@ -186,7 +186,7 @@ class _PaymentDetailsViewState extends State<PaymentDetailsView> {
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 35),
                       child: Divider(
-                        color: FAColors.textSecondary.withOpacity(0.4),
+                        color: FAColors.textSecondary.withValues(alpha: 0.4),
                         height: 1,
                       ),
                     ),

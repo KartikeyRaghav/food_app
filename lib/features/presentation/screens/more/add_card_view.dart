@@ -56,7 +56,10 @@ class _AddCardViewState extends State<AddCardView> {
               ),
             ],
           ),
-          Divider(color: FAColors.textSecondary.withOpacity(0.4), height: 1),
+          Divider(
+            color: FAColors.textSecondary.withValues(alpha: 0.4),
+            height: 1,
+          ),
           const SizedBox(height: 15),
           RoundTextfield(
             hintText: "Card Number",

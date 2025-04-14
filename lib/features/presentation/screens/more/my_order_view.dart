@@ -39,7 +39,11 @@ class _MyOrderViewState extends State<MyOrderView> {
                       onPressed: () {
                         Navigator.pop(context);
                       },
-                      icon: Icon(Iconsax.arrow_left_2, color: FAColors.white, size: 20,),
+                      icon: Icon(
+                        Iconsax.arrow_left_2,
+                        color: FAColors.white,
+                        size: 20,
+                      ),
                     ),
                     const SizedBox(width: 8),
                     Expanded(
@@ -179,7 +183,7 @@ class _MyOrderViewState extends State<MyOrderView> {
                       ((context, index) => Divider(
                         indent: 25,
                         endIndent: 25,
-                        color: FAColors.textSecondary.withOpacity(0.5),
+                        color: FAColors.textSecondary.withValues(alpha: 0.5),
                         height: 1,
                       )),
                   itemBuilder: ((context, index) {
@@ -249,7 +253,7 @@ class _MyOrderViewState extends State<MyOrderView> {
                       ],
                     ),
                     Divider(
-                      color: FAColors.textSecondary.withOpacity(0.5),
+                      color: FAColors.textSecondary.withValues(alpha: 0.5),
                       height: 1,
                     ),
                     const SizedBox(height: 15),
@@ -300,7 +304,7 @@ class _MyOrderViewState extends State<MyOrderView> {
                     ),
                     const SizedBox(height: 15),
                     Divider(
-                      color: FAColors.textSecondary.withOpacity(0.5),
+                      color: FAColors.textSecondary.withValues(alpha: 0.5),
                       height: 1,
                     ),
                     const SizedBox(height: 15),
