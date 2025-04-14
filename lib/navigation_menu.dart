@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:food_app/features/presentation/screens/home/home.dart';
+import 'package:food_app/features/presentation/screens/home/home_screen.dart';
 import 'package:food_app/features/presentation/screens/menu/menu_screen.dart';
+import 'package:food_app/features/presentation/screens/offer/offer_screen.dart';
 import 'package:food_app/utils/helpers/helper_functions.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
@@ -62,7 +63,7 @@ class NavigationController extends GetxController {
   final Rx<int> selectedIndex = 0.obs;
   final screens = [
     MenuScreen(),
-    Container(),
+    OfferScreen(),
     HomeScreen(),
     Container(),
     Container(),

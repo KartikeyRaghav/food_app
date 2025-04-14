@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:food_app/common/widgets/round_button.dart';
 import 'package:food_app/features/presentation/screens/more/checkout_view.dart';
 import 'package:food_app/utils/constants/colors.dart';
+import 'package:iconsax/iconsax.dart';
 
 class MyOrderView extends StatefulWidget {
   const MyOrderView({super.key});
@@ -22,7 +23,7 @@ class _MyOrderViewState extends State<MyOrderView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: FAColors.white,
+      backgroundColor: FAColors.black,
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.symmetric(vertical: 20),
@@ -38,18 +39,14 @@ class _MyOrderViewState extends State<MyOrderView> {
                       onPressed: () {
                         Navigator.pop(context);
                       },
-                      icon: Image.asset(
-                        "assets/img/btn_back.png",
-                        width: 20,
-                        height: 20,
-                      ),
+                      icon: Icon(Iconsax.arrow_left_2, color: FAColors.white, size: 20,),
                     ),
                     const SizedBox(width: 8),
                     Expanded(
                       child: Text(
                         "My Order",
                         style: TextStyle(
-                          color: FAColors.textPrimary,
+                          color: FAColors.primary,
                           fontSize: 20,
                           fontWeight: FontWeight.w800,
                         ),
@@ -67,12 +64,7 @@ class _MyOrderViewState extends State<MyOrderView> {
                   children: [
                     ClipRRect(
                       borderRadius: BorderRadius.circular(15),
-                      child: Image.asset(
-                        "assets/img/shop_logo.png",
-                        width: 80,
-                        height: 80,
-                        fit: BoxFit.cover,
-                      ),
+                      child: Icon(Iconsax.shop, size: 80),
                     ),
                     const SizedBox(width: 8),
                     Expanded(
@@ -92,11 +84,10 @@ class _MyOrderViewState extends State<MyOrderView> {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
-                              Image.asset(
-                                "assets/img/rate.png",
-                                width: 10,
-                                height: 10,
-                                fit: BoxFit.cover,
+                              Icon(
+                                Iconsax.star5,
+                                size: 10,
+                                color: FAColors.primary,
                               ),
                               const SizedBox(width: 4),
                               Text(
@@ -131,10 +122,10 @@ class _MyOrderViewState extends State<MyOrderView> {
                                 ),
                               ),
                               Text(
-                                " . ",
+                                " - ",
                                 textAlign: TextAlign.center,
                                 style: TextStyle(
-                                  color: FAColors.primary,
+                                  color: FAColors.textSecondary,
                                   fontSize: 12,
                                 ),
                               ),
@@ -152,11 +143,10 @@ class _MyOrderViewState extends State<MyOrderView> {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
-                              Image.asset(
-                                "assets/img/location-pin.png",
-                                width: 13,
-                                height: 13,
-                                fit: BoxFit.contain,
+                              Icon(
+                                Iconsax.location,
+                                size: 13,
+                                color: FAColors.textSecondary,
                               ),
                               const SizedBox(width: 4),
                               Expanded(
@@ -179,7 +169,7 @@ class _MyOrderViewState extends State<MyOrderView> {
               ),
               const SizedBox(height: 20),
               Container(
-                decoration: BoxDecoration(color: FAColors.white),
+                decoration: BoxDecoration(color: FAColors.dark),
                 child: ListView.separated(
                   physics: const NeverScrollableScrollPhysics(),
                   shrinkWrap: true,

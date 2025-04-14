@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:food_app/features/presentation/screens/home/home.dart';
+import 'package:food_app/features/presentation/screens/home/home_screen.dart';
 import 'package:get/get.dart';
 import 'package:food_app/utils/constants/image_strings.dart';
 import 'package:food_app/utils/popups/full_screen_loader.dart';
