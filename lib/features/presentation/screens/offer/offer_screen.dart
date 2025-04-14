@@ -12,7 +12,7 @@ class OfferScreen extends StatelessWidget {
 
   final List offerArr = [
     {
-      "image": "assets/img/offer_1.png",
+      "image": "assets/images/dishes/offer_1.png",
       "name": "Café de Noires",
       "rate": "4.9",
       "rating": "124",
@@ -20,7 +20,7 @@ class OfferScreen extends StatelessWidget {
       "food_type": "Western Food",
     },
     {
-      "image": "assets/img/offer_2.png",
+      "image": "assets/images/dishes/offer_2.png",
       "name": "Isso",
       "rate": "4.9",
       "rating": "124",
@@ -28,7 +28,7 @@ class OfferScreen extends StatelessWidget {
       "food_type": "Western Food",
     },
     {
-      "image": "assets/img/offer_3.png",
+      "image": "assets/images/dishes/offer_3.png",
       "name": "Cafe Beans",
       "rate": "4.9",
       "rating": "124",
@@ -36,7 +36,7 @@ class OfferScreen extends StatelessWidget {
       "food_type": "Western Food",
     },
     {
-      "image": "assets/img/offer_1.png",
+      "image": "assets/images/dishes/offer_1.png",
       "name": "Café de Noires",
       "rate": "4.9",
       "rating": "124",
@@ -44,7 +44,7 @@ class OfferScreen extends StatelessWidget {
       "food_type": "Western Food",
     },
     {
-      "image": "assets/img/offer_2.png",
+      "image": "assets/images/dishes/offer_2.png",
       "name": "Isso",
       "rate": "4.9",
       "rating": "124",
@@ -52,7 +52,7 @@ class OfferScreen extends StatelessWidget {
       "food_type": "Western Food",
     },
     {
-      "image": "assets/img/offer_3.png",
+      "image": "assets/images/dishes/offer_3.png",
       "name": "Cafe Beans",
       "rate": "4.9",
       "rating": "124",
@@ -125,7 +125,7 @@ class OfferScreen extends StatelessWidget {
                   width: 140,
                   height: 30,
                   child: RoundButton(
-                    title: "check Offers",
+                    title: "Check Offers",
                     fontSize: 12,
                     onPressed: () {},
                   ),
