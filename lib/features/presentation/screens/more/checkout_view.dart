@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:food_app/common/widgets/round_button.dart';
 import 'package:food_app/utils/constants/colors.dart';
+import 'package:iconsax/iconsax.dart';
 
 import 'change_address_view.dart';
 import 'checkout_message_view.dart';
@@ -40,10 +41,10 @@ class _CheckoutViewState extends State<CheckoutView> {
                       onPressed: () {
                         Navigator.pop(context);
                       },
-                      icon: Image.asset(
-                        "assets/img/btn_back.png",
-                        width: 20,
-                        height: 20,
+                      icon: Icon(
+                        Iconsax.arrow_left_2,
+                        size: 20,
+                        color: FAColors.white,
                       ),
                     ),
                     const SizedBox(width: 8),

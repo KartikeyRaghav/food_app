@@ -6,16 +6,14 @@ import 'package:food_app/features/presentation/screens/more/my_order_view.dart';
 import 'package:food_app/utils/constants/colors.dart';
 import 'package:iconsax/iconsax.dart';
 
-class PaymentDetailsView extends StatefulWidget {
-  const PaymentDetailsView({super.key});
+class PaymentDetailsView extends StatelessWidget {
+  PaymentDetailsView({super.key});
 
-  @override
-  State<PaymentDetailsView> createState() => _PaymentDetailsViewState();
-}
-
-class _PaymentDetailsViewState extends State<PaymentDetailsView> {
-  List cardArr = [
-    {"icon": "assets/img/visa_icon.png", "card": "**** **** **** 2187"},
+  final List cardArr = [
+    {
+      "icon": "assets/icons/payment_methods/visa.png",
+      "card": "**** **** **** 2187",
+    },
   ];
 
   @override
@@ -36,10 +34,10 @@ class _PaymentDetailsViewState extends State<PaymentDetailsView> {
                       onPressed: () {
                         Navigator.pop(context);
                       },
-                      icon: Image.asset(
-                        "assets/img/btn_back.png",
-                        width: 20,
-                        height: 20,
+                      icon: Icon(
+                        Iconsax.arrow_left_2,
+                        size: 30,
+                        color: FAColors.white,
                       ),
                     ),
                     const SizedBox(width: 8),
@@ -95,7 +93,7 @@ class _PaymentDetailsViewState extends State<PaymentDetailsView> {
               const SizedBox(height: 15),
               Container(
                 decoration: BoxDecoration(
-                  color: FAColors.white,
+                  color: FAColors.dark,
                   boxShadow: const [
                     BoxShadow(
                       color: Colors.black26,
@@ -122,11 +120,7 @@ class _PaymentDetailsViewState extends State<PaymentDetailsView> {
                               fontWeight: FontWeight.w700,
                             ),
                           ),
-                          Image.asset(
-                            "assets/img/check.png",
-                            width: 20,
-                            height: 20,
-                          ),
+                          Icon(Iconsax.check, size: 20),
                         ],
                       ),
                     ),
@@ -156,6 +150,7 @@ class _PaymentDetailsViewState extends State<PaymentDetailsView> {
                                 width: 50,
                                 height: 35,
                                 fit: BoxFit.contain,
+                                color: FAColors.white,
                               ),
                               const SizedBox(width: 15),
                               Expanded(

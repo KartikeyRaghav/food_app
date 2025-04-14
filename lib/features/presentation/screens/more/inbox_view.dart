@@ -13,62 +13,62 @@ class InboxView extends StatefulWidget {
 class _InboxViewState extends State<InboxView> {
   List inboxArr = [
     {
-      "title": "MealMonkey Promotions",
+      "title": "Campus Crave Promotions",
       "detail":
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     },
     {
-      "title": "MealMonkey Promotions",
+      "title": "Campus Crave Promotions",
       "detail":
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     },
     {
-      "title": "MealMonkey Promotions",
+      "title": "Campus Crave Promotions",
       "detail":
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     },
     {
-      "title": "MealMonkey Promotions",
+      "title": "Campus Crave Promotions",
       "detail":
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     },
     {
-      "title": "MealMonkey Promotions",
+      "title": "Campus Crave Promotions",
       "detail":
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     },
     {
-      "title": "MealMonkey Promotions",
+      "title": "Campus Crave Promotions",
       "detail":
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     },
     {
-      "title": "MealMonkey Promotions",
+      "title": "Campus Crave Promotions",
       "detail":
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     },
     {
-      "title": "MealMonkey Promotions",
+      "title": "Campus Crave Promotions",
       "detail":
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     },
     {
-      "title": "MealMonkey Promotions",
+      "title": "Campus Crave Promotions",
       "detail":
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     },
     {
-      "title": "MealMonkey Promotions",
+      "title": "Campus Crave Promotions",
       "detail":
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     },
     {
-      "title": "MealMonkey Promotions",
+      "title": "Campus Crave Promotions",
       "detail":
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     },
     {
-      "title": "MealMonkey Promotions",
+      "title": "Campus Crave Promotions",
       "detail":
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     },
@@ -92,10 +92,10 @@ class _InboxViewState extends State<InboxView> {
                       onPressed: () {
                         Navigator.pop(context);
                       },
-                      icon: Image.asset(
-                        "assets/img/btn_back.png",
-                        width: 20,
-                        height: 20,
+                      icon: Icon(
+                        Iconsax.arrow_left_2,
+                        size: 20,
+                        color: FAColors.white,
                       ),
                     ),
                     const SizedBox(width: 8),
@@ -103,7 +103,7 @@ class _InboxViewState extends State<InboxView> {
                       child: Text(
                         "Inbox",
                         style: TextStyle(
-                          color: FAColors.textPrimary,
+                          color: FAColors.primary,
                           fontSize: 20,
                           fontWeight: FontWeight.w800,
                         ),
@@ -143,7 +143,7 @@ class _InboxViewState extends State<InboxView> {
                   var cObj = inboxArr[index] as Map? ?? {};
                   return Container(
                     decoration: BoxDecoration(
-                      color: index % 4 != 1 ? FAColors.white : FAColors.grey,
+                      color: index % 4 != 1 ? FAColors.darkerGrey : FAColors.darkGrey,
                     ),
                     padding: const EdgeInsets.symmetric(
                       vertical: 15,

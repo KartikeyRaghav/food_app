@@ -37,10 +37,10 @@ class _AboutUsViewState extends State<AboutUsView> {
                       onPressed: () {
                         Navigator.pop(context);
                       },
-                      icon: Image.asset(
-                        "assets/img/btn_back.png",
-                        width: 20,
-                        height: 20,
+                      icon: Icon(
+                        Iconsax.arrow_left_2,
+                        size: 30,
+                        color: FAColors.white,
                       ),
                     ),
                     const SizedBox(width: 8),

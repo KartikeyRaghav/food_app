@@ -40,10 +40,10 @@ class _NotificationsViewState extends State<NotificationsView> {
                       onPressed: () {
                         Navigator.pop(context);
                       },
-                      icon: Image.asset(
-                        "assets/img/btn_back.png",
-                        width: 20,
-                        height: 20,
+                      icon: Icon(
+                        Iconsax.arrow_left_2,
+                        size: 30,
+                        color: FAColors.white,
                       ),
                     ),
                     const SizedBox(width: 8),
@@ -91,7 +91,7 @@ class _NotificationsViewState extends State<NotificationsView> {
                   var cObj = notificationArr[index] as Map? ?? {};
                   return Container(
                     decoration: BoxDecoration(
-                      color: index % 2 == 0 ? FAColors.white : FAColors.white,
+                      color: FAColors.darkerGrey,
                     ),
                     padding: const EdgeInsets.symmetric(
                       vertical: 15,

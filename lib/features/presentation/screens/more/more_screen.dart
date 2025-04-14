@@ -90,7 +90,7 @@ class MoreScreen extends StatelessWidget {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => const PaymentDetailsView(),
+                              builder: (context) => PaymentDetailsView(),
                             ),
                           );
 
