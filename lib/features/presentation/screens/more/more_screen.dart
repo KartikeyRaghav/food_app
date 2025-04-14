@@ -7,51 +7,31 @@ import 'package:food_app/features/presentation/screens/more/payment_details_view
 import 'package:food_app/utils/constants/colors.dart';
 import 'package:iconsax/iconsax.dart';
 
-class MoreView extends StatefulWidget {
-  const MoreView({super.key});
+class MoreScreen extends StatelessWidget {
+  MoreScreen({super.key});
 
-  @override
-  State<MoreView> createState() => _MoreViewState();
-}
-
-class _MoreViewState extends State<MoreView> {
-  List moreArr = [
+  final List moreArr = [
     {
       "index": "1",
       "name": "Payment Details",
-      "image": "assets/img/more_payment.png",
+      "image": Iconsax.dollar_circle,
       "base": 0,
     },
     {
       "index": "2",
       "name": "My Orders",
-      "image": "assets/img/more_my_order.png",
+      "image": Iconsax.shopping_bag,
       "base": 0,
     },
     {
       "index": "3",
       "name": "Notifications",
-      "image": "assets/img/more_notification.png",
+      "image": Iconsax.notification,
       "base": 15,
     },
-    {
-      "index": "4",
-      "name": "Inbox",
-      "image": "assets/img/more_inbox.png",
-      "base": 0,
-    },
-    {
-      "index": "5",
-      "name": "About Us",
-      "image": "assets/img/more_info.png",
-      "base": 0,
-    },
-    {
-      "index": "6",
-      "name": "Logout",
-      "image": "assets/img/more_info.png",
-      "base": 0,
-    },
+    {"index": "4", "name": "Inbox", "image": Iconsax.card_pos, "base": 0},
+    {"index": "5", "name": "About Us", "image": Iconsax.info_circle, "base": 0},
+    {"index": "6", "name": "Logout", "image": Iconsax.info_circle, "base": 0},
   ];
 
   @override
@@ -165,7 +145,7 @@ class _MoreViewState extends State<MoreView> {
                               horizontal: 12,
                             ),
                             decoration: BoxDecoration(
-                              color: FAColors.white,
+                              color: FAColors.darkerGrey,
                               borderRadius: BorderRadius.circular(5),
                             ),
                             margin: const EdgeInsets.only(right: 15),
@@ -177,23 +157,18 @@ class _MoreViewState extends State<MoreView> {
                                   height: 50,
                                   padding: const EdgeInsets.all(8),
                                   decoration: BoxDecoration(
-                                    color: FAColors.grey,
+                                    color: FAColors.white,
                                     borderRadius: BorderRadius.circular(25),
                                   ),
                                   alignment: Alignment.center,
-                                  child: Image.asset(
-                                    mObj["image"].toString(),
-                                    width: 25,
-                                    height: 25,
-                                    fit: BoxFit.contain,
-                                  ),
+                                  child: Icon(mObj["image"], size: 25, color: FAColors.primary,),
                                 ),
                                 const SizedBox(width: 15),
                                 Expanded(
                                   child: Text(
                                     mObj["name"].toString(),
                                     style: TextStyle(
-                                      color: FAColors.textPrimary,
+                                      color: FAColors.primary,
                                       fontSize: 14,
                                       fontWeight: FontWeight.w600,
                                     ),
@@ -217,7 +192,7 @@ class _MoreViewState extends State<MoreView> {
                                       ),
                                     ),
                                   ),
-                                const SizedBox(width: 10),
+                                const SizedBox(width: 30),
                               ],
                             ),
                           ),
@@ -227,11 +202,10 @@ class _MoreViewState extends State<MoreView> {
                               color: FAColors.white,
                               borderRadius: BorderRadius.circular(15),
                             ),
-                            child: Image.asset(
-                              "assets/img/btn_next.png",
-                              width: 10,
-                              height: 10,
-                              color: FAColors.textPrimary,
+                            child: Icon(
+                              Iconsax.arrow_right_2,
+                              size: 30,
+                              color: FAColors.primary,
                             ),
                           ),
                         ],

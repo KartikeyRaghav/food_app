@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:food_app/features/presentation/screens/home/home_screen.dart';
 import 'package:food_app/features/presentation/screens/menu/menu_screen.dart';
+import 'package:food_app/features/presentation/screens/more/more_screen.dart';
 import 'package:food_app/features/presentation/screens/offer/offer_screen.dart';
+import 'package:food_app/features/presentation/screens/profile/profile_screen.dart';
 import 'package:food_app/utils/helpers/helper_functions.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
@@ -64,7 +66,7 @@ class NavigationController extends GetxController {
     MenuScreen(),
     OfferScreen(),
     HomeScreen(),
-    Container(),
-    Container(),
+    ProfileScreen(),
+    MoreScreen(),
   ];
 }
