@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:food_app/utils/constants/colors.dart';
+import 'package:iconsax/iconsax.dart';
 import 'my_order_view.dart';
 
 class AboutUsView extends StatefulWidget {
@@ -62,10 +63,10 @@ class _AboutUsViewState extends State<AboutUsView> {
                           ),
                         );
                       },
-                      icon: Image.asset(
-                        "assets/img/shopping_cart.png",
-                        width: 25,
-                        height: 25,
+                      icon: Icon(
+                        Iconsax.shopping_cart,
+                        size: 25,
+                        color: FAColors.white,
                       ),
                     ),
                   ],

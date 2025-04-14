@@ -3,6 +3,7 @@ import 'package:food_app/common/widgets/popular_resutaurant_row.dart';
 import 'package:food_app/common/widgets/round_button.dart';
 import 'package:food_app/features/presentation/screens/more/my_order_view.dart';
 import 'package:food_app/utils/constants/colors.dart';
+import 'package:iconsax/iconsax.dart';
 
 class OfferView extends StatefulWidget {
   const OfferView({super.key});
@@ -97,10 +98,10 @@ class _OfferViewState extends State<OfferView> {
                           ),
                         );
                       },
-                      icon: Image.asset(
-                        "assets/img/shopping_cart.png",
-                        width: 25,
-                        height: 25,
+                      icon: Icon(
+                        Iconsax.shopping_cart,
+                        size: 25,
+                        color: FAColors.white,
                       ),
                     ),
                   ],

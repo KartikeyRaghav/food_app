@@ -5,6 +5,7 @@ import 'package:food_app/features/presentation/screens/more/my_order_view.dart';
 import 'package:food_app/features/presentation/screens/more/notification_view.dart';
 import 'package:food_app/features/presentation/screens/more/payment_details_view.dart';
 import 'package:food_app/utils/constants/colors.dart';
+import 'package:iconsax/iconsax.dart';
 
 class MoreView extends StatefulWidget {
   const MoreView({super.key});
@@ -85,10 +86,10 @@ class _MoreViewState extends State<MoreView> {
                           ),
                         );
                       },
-                      icon: Image.asset(
-                        "assets/img/shopping_cart.png",
-                        width: 25,
-                        height: 25,
+                      icon: Icon(
+                        Iconsax.shopping_cart,
+                        size: 25,
+                        color: FAColors.white,
                       ),
                     ),
                   ],

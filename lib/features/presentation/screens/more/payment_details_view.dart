@@ -62,10 +62,10 @@ class _PaymentDetailsViewState extends State<PaymentDetailsView> {
                           ),
                         );
                       },
-                      icon: Image.asset(
-                        "assets/img/shopping_cart.png",
-                        width: 25,
-                        height: 25,
+                      icon: Icon(
+                        Iconsax.shopping_cart,
+                        size: 25,
+                        color: FAColors.white,
                       ),
                     ),
                   ],

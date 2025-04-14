@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:food_app/features/presentation/screens/more/my_order_view.dart';
 import 'package:food_app/utils/constants/colors.dart';
+import 'package:iconsax/iconsax.dart';
 
 class NotificationsView extends StatefulWidget {
   const NotificationsView({super.key});
@@ -65,10 +66,10 @@ class _NotificationsViewState extends State<NotificationsView> {
                           ),
                         );
                       },
-                      icon: Image.asset(
-                        "assets/img/shopping_cart.png",
-                        width: 25,
-                        height: 25,
+                      icon: Icon(
+                        Iconsax.shopping_cart,
+                        size: 25,
+                        color: FAColors.white,
                       ),
                     ),
                   ],
