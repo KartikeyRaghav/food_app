@@ -68,5 +68,5 @@ class FASizes {
   static const double gridViewSpacing = 16.0;
 
   //Container height
-  static const double containerHeight = 100.0;
+  static const double containerHeight = 90.0;
 }

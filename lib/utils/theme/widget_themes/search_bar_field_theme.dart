@@ -12,20 +12,24 @@ class FASearchBarFieldTheme {
       contentPadding: const EdgeInsets.only(bottom: 2, left: 20),
       focusedBorder: OutlineInputBorder(
         borderSide: BorderSide(color: Colors.grey),
-        borderRadius: BorderRadius.circular(20),
+        borderRadius: BorderRadius.circular(10),
       ),
       border: OutlineInputBorder(
         borderSide: BorderSide(color: Colors.grey),
-        borderRadius: BorderRadius.circular(20),
+        borderRadius: BorderRadius.circular(10),
       ),
       enabledBorder: OutlineInputBorder(
         borderSide: BorderSide(color: Colors.grey),
-        borderRadius: BorderRadius.circular(20),
+        borderRadius: BorderRadius.circular(10),
       ),
       filled: true,
       fillColor: Colors.white,
       hintText: hintText,
-      hintStyle: TextStyle(fontSize: 16, color: FAColors.darkGrey, fontWeight: FontWeight.w500),
+      hintStyle: TextStyle(
+        fontSize: 16,
+        color: FAColors.darkGrey,
+        fontWeight: FontWeight.w500,
+      ),
       suffixIcon: suffixIcon,
     );
   }
